@@ -56,10 +56,6 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 
 % Flexible tables
 \usepackage{tabu}
-\usepackage{tabularx}
-
-\newcolumntype{b}{X}
-\newcolumntype{s}{>{\hsize=.5\hsize}X}
 
 % For custom margins
 \usepackage{changepage}
