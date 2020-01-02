@@ -28,6 +28,9 @@
 \DeclareOption{calibri}{%
   \def\mainfontface{Calibri}
 }
+\DeclareOption{roboto}{%
+  \def\mainfontface{Roboto}
+}
 
 \ProcessOptions\relax
 
@@ -36,6 +39,9 @@
 
 % Set document margins
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} 
+
+% font-specific packages
+\usepackage{roboto}
 
 % Set font face
 \usepackage{fontspec}
@@ -70,7 +76,7 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 \usepackage{ifthen}
 \usepackage{ifplatform}
 
-% For spcaed small caps
+% For spaced small caps
 \usepackage{microtype}
 
 % For cute colors
