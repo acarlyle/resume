@@ -56,6 +56,10 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 
 % Flexible tables
 \usepackage{tabu}
+\usepackage{tabularx}
+
+\newcolumntype{b}{X}
+\newcolumntype{s}{>{\hsize=.5\hsize}X}
 
 % For custom margins
 \usepackage{changepage}
@@ -202,9 +206,9 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 	\notblank{#2}{\toggletrue{lefttitledefined}}{}
 	\notblank{#3}{\toggletrue{righttitledefined}}{}
 	\ifboolexpr{togl {lefttitledefined} or togl {righttitledefined}}{
-		\begin{tabu} to 1\textwidth { X[l,p] X[r,p] }
+		\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}l}
 			\textcolor{ColorSubsectionName}{\textbf{#2}} & \textbf{#3} \\
-		\end{tabu}
+		\end{tabular*}
 		% Add space according to the specidied number of lines
 		\ifnumcomp{#1}{=}{1}{\vspace*{\aftersinglelinesubsectionheaderspace}}{
 			\ifnumcomp{#1}{=}{2}{\vspace*{\afterdoublelinesubsectionheaderspace}}{
