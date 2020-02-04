@@ -155,6 +155,43 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 	\textcolor{ColorName}{\textbf{\LARGE\textls[110]{\textsc{\@name}}}}
 }
 
+
+\makeatother
+
+% Phone
+\makeatletter
+
+\newcommand\phone[1]{\def\@phone{#1}}
+\phone{}
+
+\newcommand\printphone{
+	\small{\@phone}
+}
+
+\makeatother
+
+% Location
+\makeatletter
+
+\newcommand\location[1]{\def\@location{#1}}
+\location{}
+
+\newcommand\printlocation{
+	\small{\@location}
+}
+
+\makeatother
+
+% Email
+\makeatletter
+
+\newcommand\email[1]{\def\@email{#1}}
+\email{}
+
+\newcommand\printemail{
+	\small{\@email}
+}
+
 \makeatother
 
 % Contacts
@@ -171,10 +208,16 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 
 \makeatletter
 \newcommand\makeheader{
+	%\begin{center}
+	%	\begin{tabu} to 1\textwidth { X[l,m] X[2,c,m] X[r,m] }
+	%		\printaddress & \printname & \printcontacts \\
+	%	\end{tabu}	
+	%\end{center}
 	\begin{center}
-		\begin{tabu} to 1\textwidth { X[l,m] X[2,c,m] X[r,m] }
-			\printaddress & \printname & \printcontacts \\
-		\end{tabu}	
+		\printname \linebreak 
+		\linebreak 
+		\printlocation |\printphone \linebreak 
+		\printemail
 	\end{center}
 	\vspace*{\afterheaderspace}
 }
