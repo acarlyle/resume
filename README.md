@@ -1,8 +1,8 @@
-# McDowell CV
+# Resume
 Personal resume utilizing a LuaLaTeX class originally proposed by Gayle L. McDowell at 
 http://www.careercup.com/resume. 
 
-***IMPORTANT*** Need to use 'LuaLaTeX' option when building a new PDF of the resume. 
+***IMPORTANT:*** Need to use 'LuaLaTeX' option when building a new PDF of the resume. 
 
 The class is based on `article` class. The paper format is set to U.S. letterpaper by default. A template showing an example usage of the class is included.
 
