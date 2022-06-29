@@ -10,6 +10,9 @@
 *.pdf
 *.png
 
+## Unimportant stuff
+*example*
+
 ## Intermediate documents:
 *.dvi
 *-converted-to.*
