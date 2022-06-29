@@ -2,7 +2,10 @@
 Personal resume utilizing a LuaLaTeX class originally proposed by Gayle L. McDowell at 
 http://www.careercup.com/resume. 
 
-***IMPORTANT:*** Make sure to use the 'LuaLaTeX' option when generating a new PDF version of the resume.   
+***IMPORTANT:*** Make sure to use the 'LuaLaTeX' option when generating a new PDF version of the resume.  
+
+alec.carlyle_resume.tex is to be used as a a one page summary of my professional experience while alec.carlyle_CV.tex
+contains a complete and extensive summation of my working life.  
 
 The class is based on `article` class. The paper format is set to U.S. letterpaper by default. A template showing an example usage of the class is included.
 
